@@ -1,0 +1,176 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+ 
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', Baskerville;
+    font-size: 19px;
+}
+
+/* MOTOR DE BUSQUEDA */
+.motor {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0b4257;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+.motor_content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.motor_con {
+    margin-right: 2rem;
+}
+
+.motor_con {
+    position: relative;
+    width: fit-content;
+}
+.motor_title {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+.motor_con input, .motor_con select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.motor_title img{
+	height: 45px;
+	width: auto;
+	padding: 0 9px;
+}
+
+
+input[type="date" i] {
+    align-items: center;
+    display: inline-flex;
+    font-family: monospace;
+    padding-inline-start: 1px;
+    cursor: default;
+    overflow: hidden;
+    padding: 0px;
+}
+
+input {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: #c89414;
+    border-image: initial;
+}
+
+.motor_con input, .motor_con select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+select {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: field;
+    cursor: default;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c89414;
+    border-image: initial;
+    border-radius: 0px;
+}
+
+.motor_con {
+    margin-right: 2rem;
+}
+.motor_con {
+    position: relative;
+    width: fit-content;
+}
+
+.motor_reservar {
+    height: 4.5rem;
+}
+
+.motor_reservar {
+    background-color: #c89414;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.motor_reservar img {
+    width: .8rem;
+    margin-left: .5rem;
+    padding-top: 0.38rem;
+}
+
+.motor_reservar__t1 {
+    font-size: 1.2rem;
+    line-height: .6rem;
+    padding-top: 0.38rem;
+}
+   .motor_reservar__t1 {
+    font-weight: bold;
+    color: white;
+}
