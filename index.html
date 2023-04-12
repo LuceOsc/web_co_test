@@ -45,102 +45,97 @@
 </div>
 
 <!-- MOTOR DE RESERVA -->
-<div class="motor section">
-    <div class="motor_content">
-        <!-- FECHA DE LLEGADA -->
-        <div class="motor_con">
-            <div class="motor_title">
-                <img class="icon_a" src="images/reserva/calendar.svg" alt="Calendario icon">
-                <div class="motor_title__t1 llegada">FECHA DE LLEGADA</div>
+    <div class="motor section">
+        <div class="motor_content">
+            <!-- FECHA DE LLEGADA -->
+            <div class="motor_con">
+                <div class="motor_title">
+                    <img src="images/motor/calendar.svg" alt="Calendario icon">
+                    <div class="motor_title__t1 llegada">FECHA DE LLEGADA</div>
+                </div>
+                <input type="date" id="llegada" name="llegada">
             </div>
-            <input type="date" id="llegada" name="llegada">
+            <!-- FECHA DE SALIDA -->
+            <div class="motor_con">
+                <div class="motor_title">
+                    <img src="images/motor/calendar.svg" alt="Calendario icon">
+                    <div class="motor_title__t1 salida">FECHA DE SALIDA</div>
+                </div>
+                <input type="date" id="salida" name="salida">
+            </div>
+            <!-- ADULTOS -->
+            <div class="motor_con">
+                <div class="motor_title">
+                    <img src="images/motor/adulto.svg" alt="Adultos icon">
+                    <div class="motor_title__t1 adultos">2 ADULTOS</div>
+                </div>
+                <select name="adultos" id="adultos">
+                    <option value="11">11</option>
+                    <option value="10">10</option>
+                    <option value="9">9</option>
+                    <option value="8">8</option>
+                    <option value="7">7</option>
+                    <option value="6">6</option>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2" selected>2</option>
+                    <option value="1">1</option>
+                </select>
+            </div>
+            <!-- NIÑOS -->
+            <div class="motor_con">
+                <div class="motor_title">
+                    <img src="images/motor/ninos.svg" alt="Niños icon">
+                    <div class="motor_title__t1 ninos">0 NIÑOS</div>
+                </div>
+                <select name="ninos" id="ninos">
+                    <option value="6">6</option>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                    <option value="0" selected>0</option>
+                </select>
+            </div>
         </div>
-        <!-- FECHA DE SALIDA -->
-        <div class="motor_con">
-            <div class="motor_title">
-                <img class="icon_a" src="images/reserva/calendar.svg" alt="Calendario icon">
-                <div class="motor_title__t1 salida">FECHA DE SALIDA</div>
-            </div>
-            <input type="date" id="salida" name="salida">
-        </div>
-        <!-- ADULTOS -->
-        <div class="motor_con">
-            <div class="motor_title">
-                <img class="icon_a" src="images/reserva/adulto.svg" alt="Adultos icon">
-                <div class="motor_title__t1 adultos">2 ADULTOS</div>
-            </div>
-            <select name="adultos" id="adultos">
-                <option value="11">11</option>
-                <option value="10">10</option>
-                <option value="9">9</option>
-                <option value="8">8</option>
-                <option value="7">7</option>
-                <option value="6">6</option>
-                <option value="5">5</option>
-                <option value="4">4</option>
-                <option value="3">3</option>
-                <option value="2" selected>2</option>
-                <option value="1">1</option>
-            </select>
-        </div>
-        <!-- NIÑOS -->
-        <div class="motor_con">
-            <div class="motor_title">
-                <img class="icon_a" src="images/reserva/ninos.svg" alt="Niños icon">
-                <div class="motor_title__t1 ninos">0 NIÑOS</div>
-            </div>
-            <select name="ninos" id="ninos">
-                <option value="6">6</option>
-                <option value="5">5</option>
-                <option value="4">4</option>
-                <option value="3">3</option>
-                <option value="2">2</option>
-                <option value="1">1</option>
-                <option value="0" selected>0</option>
-            </select>
+        <div id="btnReservarEs" class="motor_reservar" onclick="motorUrl()">
+            <div class="motor_reservar__t1">RESERVAR</div>
+            <img src="images/motor/chevron.svg" alt="Chevron right">
         </div>
     </div>
-    <div id="btnReservarEs" class="motor_reservar" onclick="motorUrl()">
-        <div class="motor_reservar__t1">RESERVAR</div>
-        <img src="images/reserva/chevron.svg" alt="Chevron right">
-    </div>
-</div>
-<script src="motor/app.js"></script>
+    <script src="motor/app.js"></script>
 
 <!-- Vive la experiencia -->
-<section class="vive_body">
+<div class="container">
+        <div class="vive_title">
+            <p> VIVE LA EXPERIENCÍA </p>
+        </div>
 
-    <div class="palmera">
-        <img src="images/palmera.png" alt="pamlera.png">
-    </div>
+        <div class="costa_oro">
+            <p>Costa de Oro</p>
+        </div>
 
-    <div class="vive_title">
-        <p> VIVE LA EXPERIENCÍA </p>
-    </div>
+        <div class="hoja_costa">
+            <img src="images/hojacolor.png" alt="Hoja_costa_oro.png">
+        </div>
 
-    <div class="costa_oro">
-        <p>Costa de Oro</p>
-    </div>
+        <div class="lorem_title">
+            <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</p> 
+        </div>
 
-    <div class="hoja_costa">
-        <img src="images/hojacolor.png" alt="Hoja_costa_oro.png">
-    </div>
-
-    <div class="lorem_title">
-        <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</p> 
-    </div>
-
-    <div class="lore_body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel 
+        <div class="lore_body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel 
             finibus tellus. Nullam tristique posuere diam vel tempor. Mauris facilisis vestibulum elit non semper. Vestibulum nisi nulla, tristique non ligula sit amet, venenatis semper dui. 
-        </p>
-    </div>
-    <div class="lore_body2">
-        <p>
+            </p>
+        </div>
+        <div class="lore_body2">
+            <p>
            Duis vitae condimentum massa. Phasellus est turpis, venenatis vel cursus et, consequat neque 
-       </p>
-   </div>
-</section>
+            </p>
+        </div>
+</div>
 
 <!-- Nuestras Amenidades -->
 <div class="am_body">

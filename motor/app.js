@@ -46,7 +46,7 @@ ninos.onchange = function() {
 
 /* CREAR URL */
 function motorUrl(){
-    let url = 'https://direct-book.com/properties/theinnatmazatlandirect?locale=es&items[0]';
+    let url = '#';
     url = url + '[adults]=' + adultos.value;
     url = url + '&items[0][children]=' + ninos.value;
     url = url + '&items[0][infants]=0&currency=MXN';
