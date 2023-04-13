@@ -567,147 +567,288 @@ li{
 }
 
 /* Nuestras Amenidades */
-
-.am_body {
-	font-family: sans-serif;
-	display: flex;
-	gap: 5px;
-	height: 597px;
-	background-color: #0b4257;
+.na_body{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		
 }
+.na_body {
+	display: flex;
+	flex-flow: nowrap row;
+  }
 
-.img-left {
+  .img-left{
+	width: 100vw;
+	min-height: 80vh;
+}
+  
+  .img-left {
 	flex: 1.5;
+	background: url(../images/ALBERCA.png);
+	background-position: center center;
+	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.content {
-	display: flex;
+	width: 100%;
+	
+  }
+  
+  .content {
+	background: #0b4257;
 	flex: 1;
-	flex-flow: wrap column;
 	align-items: start;
 	justify-content: center;
 	padding-left: 4rem;
-	padding-bottom: 1.5rem;
+  }
+  
+  .content h2 {
+    color: white;
+    font-family: Baskerville;
+    font-size: 2rem;
+    margin-top: 1.38rem;
+    margin-bottom: 1rem;
+
 }
 
-.content h2 {
-	color: white;
-	font-family: Baskerville;
-	font-size: 45px;
-	margin-top: 1.38rem;
-	margin-bottom: 1rem;
-
-}
-
-.content span.highlihgt {
+  .content span.highlihgt {
 	color: #c89414;
-	font-family: Baskerville;
-	font-style: italic;
-	font-size: 40px;
-}
-
-.content .links {
-	flex-flow: nowrap column;
-}
-
-.content .links .link-item {
+    font-family: Baskerville;
+    font-style: italic;
+    font-size: 2rem;
+  }
+  
+  .content .links .link-item {
 	align-items: center;
 	display: flex;
 	flex-flow: nowrap row;
 	margin-left: 2rem;
 	margin-top: 1rem;
-	margin-bottom: 1.6rem;
-}
-
-.link-item img {
-	width: 60px;
-	height: 60px;
-
-}
-
-.link-item hr {
+	margin-bottom: 1em;
+  }
+  
+  .link-item img {
+	width: 3rem;
+	height: 3rem;
+  }
+  
+  .link-item hr {
 	color: white;
 	margin: 0 20px;
 	border-right: 1px solid white;
-	width: 1px;
-	height: 30px;
-}
-
-.link-item span {
-	font-family: Nunito sans;
+	width: 0.063rem;
+	height: 2rem;
+  }
+  
+  .link-item span {
 	color: white;
-}
+	font-size: 1.1rem;
+	font-family: Nunito sans;
+  }
+  
+  .flex {
+	display: flex;
+  }
+  .wrap {
+	flex-grow: wrap;
+  }
+  .no-wrap {
+	flex-grow: nowrap;
+  }
+  .fh {
+	flex-direction: row;
+  }
+  .fv {
+	flex-direction: column;
+  }
+  
+  .left {
+	flex: 1.5;
+	align-items: center;
+	justify-content: center;
+  }
+
+  @media only screen and (max-width: 1024px) {
+	.content h2 {
+		color: white;
+		font-family: Baskerville;
+		font-size: 1.5rem;
+		margin-top: 1.38rem;
+		margin-bottom: 1rem;
+	
+	}
+	
+	  .content span.highlihgt {
+		color: #c89414;
+		font-family: Baskerville;
+		font-style: italic;
+		font-size: 1.5rem;
+	  }
+	  
+	  .content .links .link-item {
+		align-items: center;
+		display: flex;
+		flex-flow: nowrap row;
+		margin-left: 1rem;
+		margin-top: 1rem;
+		margin-bottom: 1em;
+	  }
+	  
+	  .link-item img {
+		width: 2.6rem;
+		height: 2.6rem;
+	  }
+	  
+	  .link-item hr {
+		color: white;
+		margin: 0 10px;
+		border-right: 1px solid white;
+		width: 0.063rem;
+		height: 1rem;
+	  }
+	  
+	  .link-item span {
+		color: white;
+		font-size: .7rem;
+		font-family: Nunito sans;
+	  }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+	.na_body {
+	  flex-flow: nowrap column;
+	}
+  
+	.left {
+	  min-height: 500px;
+	}
+
+	.content h2 {
+		color: white;
+		font-family: Baskerville;
+		font-size: 1.5rem;
+		margin-top: 1.38rem;
+		margin-bottom: 1rem;
+	
+	}
+	
+	  .content span.highlihgt {
+		color: #c89414;
+		font-family: Baskerville;
+		font-style: italic;
+		font-size: 1.5rem;
+	  }
+	  
+	  .content .links .link-item {
+		align-items: center;
+		display: flex;
+		flex-flow: nowrap row;
+		margin-left: 1rem;
+		margin-top: 1rem;
+		margin-bottom: 1em;
+	  }
+	  
+	  .link-item img {
+		width: 2.6rem;
+		height: 2.6rem;
+	  }
+	  
+	  .link-item hr {
+		color: white;
+		margin: 0 10px;
+		border-right: 1px solid white;
+		width: 0.063rem;
+		height: 1rem;
+	  }
+	  
+	  .link-item span {
+		color: white;
+		font-size: .7rem;
+		font-family: Nunito sans;
+	  }
+  }
 
 /* Habitaciones */
-
-.hab_content {
-	display: flex;
-	align-items: center;
-	height: 681px;
+.ha_body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	
+}
+.ha_body {
+display: flex;
+flex-flow: nowrap row;
 }
 
-.hab_left {
-	display: flex;
-	flex-flow: column wrap;
-	width: 399px;
-	height: 460px;
-	justify-content: space-around;
-	flex: 1;
+.img-right{
+width: 100vw;
+min-height: 80vh;
 }
 
+.img-right {
+flex: 1.5;
+background: url(../images/HABITACIONES.png);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+margin-right: 6%;
 
-.hab-imgr {
-	display: flex;
-	flex: 1.5;
 }
 
-.hab_left hr {
+.content3 {
+flex: 1.2;
+align-items: start;
+justify-content: center;
+padding-left: 4rem;
+}
+
+.content3 h2{
+	font-size: 1.1rem;
+	color: #3c3c3c;
+	font-family: Nunito sans;
+	margin-top: 10rem;
+	margin-left: 2rem;
+}
+
+.content3 hr {
 	border-color: #0b4257;
 	border-right: 1px solid white;
 	width: 50px;
 	height: 1px;
-	gap: 2px;
 	margin-bottom: 2rem;
-	margin-left: 12rem;
 	margin-top: 2rem;
+	margin-left: 2rem;
 }
 
-.hab_left h2 {
-	font-size: 25px;
-	padding-left: 12rem;
-	font-family: Nunito sans;
-}
-
-.hab_left h1{
-	font-size: 29px;
+.content3 h1{
+	font-size: 1.8rem;
 	font-family: Nunito sans;
 	color: #0b4257;
-	width: 625px;
-	padding: 20px; 
-	padding-left: 12rem;
-	text-align: justify-all;
+	width: 90%;
 	margin-bottom: 2rem;
+	margin-left: 2rem;
 
 }
 
-.hab_left p {
+.content3 p {
 	font-size: 18px;
 	font-family: Nunito sans;
 	color: #7b7b7b;
-	width: 700px;
-	height: 81px;
+	width: 70%;
+	margin-left: 2rem;
 	margin-bottom: 4rem;
-	padding-left: 12rem;
-	text-align: justify-all;
+	text-align: justify;
 }
 
 .hab-vermas{
 	align-items: center;
 	display: flex;
 	flex-flow: nowrap row;
-	margin-left: 2rem;
-	padding-left: 17rem;
+	margin-top: 11rem;
+	margin-bottom: 3rem;
+	margin-left: 13rem;
+	
 	color: #7b7b7b;
 }
 
@@ -718,67 +859,156 @@ li{
 
 .hab-vermas span{
 	font-size: 13px;
-	font-family: Nunito sans;
 	font-style: bold;
+	font-family: Nunito sans;
 }
+
+@media only screen and (max-width: 1024px){
+	.img-right {
+		flex: 1.5;
+		background: url(../images/HABITACIONES.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		margin-right: 0%;
+		
+		}
+		.content3 h1{
+			font-size: 1.4rem;
+			font-family: Nunito sans;
+			color: #0b4257;
+			width: 90%;
+			margin-bottom: 2rem;
+			margin-left: 2rem;
+		
+		}
+}
+
+@media only screen and (max-width: 768px){
+	.ha_body {
+		flex-flow: nowrap column;
+	  }
+	  
+	  .left {
+		min-height: 900px;
+	  }
+	
+	.content3 hr {
+		border-color: #0b4257;
+		border-right: 1px solid white;
+		width: 50px;
+		height: 1px;
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+		margin-left: 2rem;
+	}
+	
+	.content3 h1{
+		font-size: 1rem;
+		font-family: Nunito sans;
+		color: #0b4257;
+		width: 90%;
+		margin-bottom: 2rem;
+		margin-left: 2rem;
+	
+	}
+	
+	.content3 p {
+		font-size: 1.1rem;
+		font-family: Nunito sans;
+		color: #7b7b7b;
+		width: 70%;
+		margin-left: 2rem;
+		margin-bottom: 4rem;
+		text-align: justify;
+	}
+	
+	.hab-vermas{
+		align-items: center;
+		display: flex;
+		flex-flow: nowrap row;
+		margin-top: 4rem;
+		margin-bottom: 3rem;
+		margin-left: 13rem;
+		
+		color: #7b7b7b;
+	}
+}
+
 
 /* Experiencia Gastronomica */
 
-section {
-  width: 100%;
-  max-height: 958px;
-  display: flex;
-  flex-flow: nowrap row;
-}
+.content2 {
+	flex: 1.2;
+	align-items: start;
+	justify-content: center;
+	margin-left: 4rem;
+  }
 
-.flex {
-  display: flex;
-}
-.wrap {
-  flex-grow: wrap;
-}
-.no-wrap {
-  flex-grow: nowrap;
-}
-.fh {
-  flex-direction: row;
-}
-.fv {
-  flex-direction: column;
-}
+.ex_body {
+	width: 100%;
+	max-height: 59.875rem;
+	display: flex;
+	flex-flow: nowrap row;
+  }
+
+  .ex_body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+  }
+
+  .ex_body{
+	background-image: url(../Utilerias/background-exp.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+  }
 
 .left {
-  flex: 1.5;
-  align-items: center;
-  justify-content: center;
-}
+	flex: 1.5;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .left .img1{
+	flex: 0.4;
+	height: 80%;
+	margin-right: 10px;
+	background: url(../Utilerias/comida1.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
-.left .img1,
-.left .img2 {
-  flex: 0.4;
-  height: 80%;
-  width: 100%;
-  max-height: 825px;
-  margin-right: 10px;
-}
+  } 
 
-.left .img1 {
-  margin-top: 80px;
-}
-.left .img2 {
-  margin-bottom: 80px;
-}
+  .left .img2 {
+	flex: 0.4;
+	height: 80%;
+	margin-right: 10px;
+	background: url(../Utilerias/comida2.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  } 
+  
+  .left .img1 {
+	margin-top: 80px;
+  }
+  .left .img2 {
+	margin-bottom: 80px;
+  }
 
-.exp-right {
+  .exp-right {
 	display: flex;
-	width: 399px;
-	height: 460px;
+	width: 70%;
 	flex: 1;
 	flex-flow: nowrap column;
-	align-items: flex-start;
 	justify-content: center;
-
-
 }
 
 .exp-right hr {
@@ -795,13 +1025,12 @@ section {
 	font-size: 30px;
 	font-family: Nunito sans;
 	color: #0b4257;
-	margin-top: 28rem;
 	margin-bottom: 0.5rem;
 
 }
 
 .exp-right h2 {
-	font-size: 18px;
+	font-size: .85rem;
 	font-family: Nunito sans;
 	color: #7b7b7b;
 }
@@ -810,8 +1039,8 @@ section {
 	font-size: 18px;
 	font-family: Nunito sans;
 	color: #7b7b7b;
-	width: 550px;
-	text-align: justify-all;
+	width: 85%;
+	text-align: justify;
 }
 
 .exp-vermas{
@@ -819,8 +1048,7 @@ section {
 	display: flex;
 	flex-flow: nowrap row;
 	margin-left: 2rem;
-	padding-top: 15rem;
-	padding-left: 2rem;
+	margin-top: 15rem;
 	color: #7b7b7b;
 }
 
@@ -834,6 +1062,82 @@ section {
 	font-style: bold;
 	font-family: Nunito sans;
 }
+@media only screen and (max-width: 1024px){
+	.exp-right h1{
+		font-size: 1.2rem;
+		font-family: Nunito sans;
+		color: #0b4257;
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.exp-vermas{
+		align-items: center;
+		display: flex;
+		flex-flow: nowrap row;
+		margin-left: 2rem;
+		margin-top: 1rem;
+		color: #7b7b7b;
+	}
+	.left .img2 {
+		display: none;
+	  }
+
+	  .left .img1{
+		flex: 1;
+		height: 80%;
+		background: url(../Utilerias/comida1.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	
+	  }  
+}
+  @media only screen and (max-width: 768px) {
+	.ex_body {
+	  flex-flow: nowrap column;
+	}
+  
+	.left {
+	  min-height: 200px;
+	}
+	.left .img1{
+		flex: 0.3;
+		height: 80%;
+		background: url(../Utilerias/comida1.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 3rem;
+	
+	  } 
+	  .exp-right h1{
+		font-size: 1rem;
+		font-family: Nunito sans;
+		color: #0b4257;
+		margin-top: 2rem;
+		margin-bottom: 0.5rem;
+	}
+	.exp-right h2 {
+		font-size: .7rem;
+		font-family: Nunito sans;
+		color: #7b7b7b;
+	}
+
+	.exp-right p {
+		width: 100%;
+	}
+
+	  .exp-vermas{
+		align-items: center;
+		display: flex;
+		flex-flow: nowrap row;
+		margin-left: 2rem;
+		margin-top: 4rem;
+		margin-bottom: 1rem;
+		color: #7b7b7b;
+	} 
+  }
 
 /* Vistazo a tu Próxima Experiencia */
 
@@ -848,8 +1152,8 @@ section {
 }
 
 .instegram-top img{
-	width: 60px;
-	height: 60px;
+	width: 3.75rem;
+	height: 3.75rem;
 }
 
 .instegram-top {
@@ -859,7 +1163,7 @@ section {
 }
 
 .instegram-top span {
-	font-size: 46px;
+	font-size: 2.8rem;
 	font-family: Baskerville;
 	font-style: normal;
 	color: #0b4257;
@@ -875,11 +1179,78 @@ section {
 
 .instegram-img {
 	display: flex;
+	flex-flow: nowrap center;
+}
+
+.instegram-img{
+	width: 100vw;
+	min-width: 320px;
+}
+
+.instegram-img img{
+	width: 100%;
 }
 
 .instegram-img img {
 	padding: 1rem;
 }
+
+@media only screen and (max-width: 1547px) {
+	.inst3{
+		display: none ;
+
+	}
+}
+@media only screen and (max-width: 1024px) {
+	
+	.instegram-top img{
+		width: 3rem;
+		height: 3rem;
+	}
+	
+	.instegram-top span {
+		font-size: 1.8rem;
+		font-family: Baskerville;
+		font-style: normal;
+		color: #0b4257;
+	}
+	
+	.texto_span {
+		font-family: Baskerville;
+		font-style: italic;
+		color: #c89414;
+		font-size: 3rem;
+		padding-bottom: 2rem;
+	}
+}
+@media only screen and (max-width: 768px) {
+	
+	.instegram-top img{
+		width: 2.8rem;
+		height: 2.8rem;
+	}
+	
+	.instegram-top span {
+		font-size: 1.2rem;
+		font-family: Baskerville;
+		font-style: normal;
+		color: #0b4257;
+		padding-left: 1rem;
+	}
+	
+	.texto_span {
+		font-family: Baskerville;
+		font-style: italic;
+		color: #c89414;
+		font-size: 2rem;
+		margin-top: 1rem;
+	}
+	
+	.inst2{
+		display: none;
+	}
+}
+
 /* Mapa de Ubicaciones */
 
 .ubicacion-img {
@@ -968,13 +1339,41 @@ section {
 	height: 6rem;
 }
 
-@media screen and (max-width:800px) {
+@media only screen and (max-width: 1547px) {
+	.footer1 .grupo-1{
+		width: 100%;
+		max-width: 1200px;
+		display: grid;
+		grid-template-columns: 55% 30% 2% 2%;
+		grid-gap: 40px;
+		padding: 53px 0px;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.footer1 .grupo-1{
+		width: 100%;
+		max-width: 1200px;
+		display: grid;
+		grid-template-columns: 50% 20% 2% 2%;
+		grid-gap: 40px;
+		padding: 53px 0px;
+	}
+	.footer1 .grupo-1 .box figure img{
+		width: 200px;
+	}
+
+}
+
+@media screen and (max-width:768px) {
 	.footer1 .grupo-1{
 	width: 90%;
 	grid-template-columns: repeat(1, 1fr);
 	grid-gap: 30px;
 	padding: 15px 0px;
 }
+
+
 .box hr{
 	height: 1px;
 	width: 228px;
