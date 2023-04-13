@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Nunito+Sans:wght@400;700&display=swap');
 
 *{
-    margin: 0;
+    padding: 0;
+	margin: 0;
     text-decoration: none;
     list-style: none;
     font-family: 'Nunito', 'Baskerville';
@@ -22,10 +23,10 @@
 }
 
 .logo img{
-    height: 70px;
+    height: 80px;
     width: auto;
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 3.5rem;
 }
 
 .nav-menu{
