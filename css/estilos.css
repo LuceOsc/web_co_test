@@ -1139,13 +1139,62 @@ padding-left: 4rem;
 		color: #7b7b7b;
 	} 
   }
+  @media only screen and (max-width: 444px) {
+	.left {
+		min-height: 250px;
+	  }
+	  .left .img1{
+		  flex: 0.3;
+		  height: 80%;
+		  background: url(../Utilerias/comida1.png);
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  margin-bottom: 3rem;
+	  
+		} 
+		
+		.exp-right {
+			display: flex;
+			width: 70%;
+			height: 20%;
+			flex: 1;
+			flex-flow: nowrap column;
+			justify-content: center;
+		}
 
+		.exp-right h1{
+		  font-size: 1rem;
+		  font-family: Nunito sans;
+		  color: #0b4257;
+		  margin-top: .7rem;
+		  margin-bottom: 0.5rem;
+	  }
+	  .exp-right h2 {
+		  font-size: .7rem;
+		  font-family: Nunito sans;
+		  color: #7b7b7b;
+	  }
+  
+	  .exp-right p {
+		  width: 100%;
+	  }
+  
+		.exp-vermas{
+		  align-items: center;
+		  display: flex;
+		  flex-flow: nowrap row;
+		  margin-left: 2rem;
+		  margin-top: 0.5rem;
+		  margin-bottom: 1rem;
+		  color: #7b7b7b;
+	  } 
+  }
 /* Vistazo a tu Próxima Experiencia */
 
 .vis_body {
 	display: flex;
 	width: auto;
-	height: 988px;
 	flex: 1;
 	flex-flow: nowrap column;
 	align-items: center;
@@ -1183,11 +1232,6 @@ padding-left: 4rem;
 	flex-flow: nowrap center;
 }
 
-.instegram-img{
-	width: 100vw;
-	min-width: 320px;
-}
-
 .instegram-img img{
 	width: 100%;
 }
@@ -1196,13 +1240,7 @@ padding-left: 4rem;
 	padding: 1rem;
 }
 
-@media only screen and (max-width: 1547px) {
-	.inst3{
-		display: none ;
-
-	}
-}
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1720px) {
 	
 	.instegram-top img{
 		width: 3rem;
@@ -1210,7 +1248,7 @@ padding-left: 4rem;
 	}
 	
 	.instegram-top span {
-		font-size: 1.8rem;
+		font-size: 2rem;
 		font-family: Baskerville;
 		font-style: normal;
 		color: #0b4257;
@@ -1223,16 +1261,50 @@ padding-left: 4rem;
 		font-size: 3rem;
 		padding-bottom: 2rem;
 	}
+
+
+	.instegram-img img {
+		width: 34%;
+	}
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 1024px) {
 	
 	.instegram-top img{
-		width: 2.8rem;
-		height: 2.8rem;
+		width: 2rem;
+		height: 2rem;
 	}
 	
 	.instegram-top span {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
+		font-family: Baskerville;
+		font-style: normal;
+		color: #0b4257;
+	}
+	
+	.texto_span {
+		font-family: Baskerville;
+		font-style: italic;
+		color: #c89414;
+		font-size: 2rem;
+		padding-bottom: 2rem;
+	}
+
+
+}
+@media only screen and (max-width: 768px) {
+	
+	.instegram-top{
+		margin-top: 1rem;
+	}
+	
+	.instegram-top img{
+		width: 2rem;
+		height: 2rem;
+	}
+	
+	.instegram-top span {
+		font-size: 1.1rem;
 		font-family: Baskerville;
 		font-style: normal;
 		color: #0b4257;
@@ -1243,13 +1315,15 @@ padding-left: 4rem;
 		font-family: Baskerville;
 		font-style: italic;
 		color: #c89414;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		margin-top: 1rem;
 	}
 	
-	.inst2{
-		display: none;
+	.instegram-img{
+		display: flex;
+		justify-content: center;
 	}
+
 }
 
 /* Mapa de Ubicaciones */
@@ -1266,6 +1340,7 @@ padding-left: 4rem;
 .ubicacion-img{
 	width: 100vw;
 	min-width: 320px;
+	object-fit: cover;
 }
 
 .ubicacion-img img{
@@ -1343,9 +1418,9 @@ padding-left: 4rem;
 @media only screen and (max-width: 1547px) {
 	.footer1 .grupo-1{
 		width: 100%;
-		max-width: 1200px;
+		max-width: 1400px;
 		display: grid;
-		grid-template-columns: 55% 30% 2% 2%;
+		grid-template-columns: 45% 13% 1% 2%;
 		grid-gap: 40px;
 		padding: 53px 0px;
 	}
@@ -1366,14 +1441,17 @@ padding-left: 4rem;
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
 	.footer1 .grupo-1{
-	width: 90%;
 	grid-template-columns: repeat(1, 1fr);
-	grid-gap: 30px;
-	padding: 15px 0px;
+	padding: 25px 20px;
 }
 
+.box figure {
+	padding-left: 6.2rem;
+	margin-right: 0rem;
+	margin-left: 0rem;
+}
 
 .box hr{
 	height: 1px;
